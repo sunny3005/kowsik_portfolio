@@ -706,6 +706,10 @@ header .navbar ul li a:hover {
 .work .desc p {
   font-size: 1.5rem;
 }
+
+.proimg{
+  background-size: auto;
+}
 .work .desc .btns {
   display: flex;
   justify-content: space-between;
