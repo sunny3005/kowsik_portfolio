@@ -966,6 +966,7 @@ header .navbar ul li a:hover {
   min-width: 280px;
   max-width: 350px;
   text-align: center;
+  align-items: center;
 }
 
 .contact-box i {
