@@ -71,12 +71,13 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "Python", "web development"],
+    strings: ["Python", "SQL", "Power BI", "Tableau", "Excel", "Data Visualization", "Data Analysis"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 500,
 });
+
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
@@ -89,20 +90,30 @@ async function fetchData(type = "skills") {
     return data;
 }
 
-function showSkills(skills) {
-    let skillsContainer = document.getElementById("skillsContainer");
-    let skillHTML = "";
-    skills.forEach(skill => {
-        skillHTML += `
-        <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
-                <span>${skill.name}</span>
-              </div>
-            </div>`
-    });
-    skillsContainer.innerHTML = skillHTML;
+async function fetchSkills() {
+    const response = await fetch("skills.json");
+    const skills = await response.json();
+    return skills;
 }
+
+function showSkills(skills) {
+    const container = document.getElementById("skillsContainer");
+    let html = "";
+    skills.forEach(skill => {
+        html += `
+        <div class="bar">
+            <div class="info">
+                <img src="${skill.icon}" alt="${skill.name}" />
+                <span>${skill.name}</span>
+            </div>
+        </div>`;
+    });
+    container.innerHTML = html;
+}
+
+// Fetch and render
+fetchSkills().then(skills => showSkills(skills));
+
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
