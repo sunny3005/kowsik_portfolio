@@ -852,22 +852,79 @@ header .navbar ul li a:hover {
   position: relative;
   border-radius: 6px;
 }
-.experience .content .tag {
-  font-size: 1.3rem;
-  padding-top: 1.5rem;
-  padding-left: 1.5rem;
+
+
+
+
+
+.experience {
+    padding: 50px 0;
 }
-.experience .content .desc {
-  margin-left: 1.5rem;
-  padding-bottom: 1rem;
+.experience .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
 }
-.experience .content .desc h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.experience .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #0d6efd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
-.experience .content .desc p {
-  font-size: 1.2rem;
+.experience .container {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
 }
+.experience .container.left {
+    left: 0;
+}
+.experience .container.right {
+    left: 50%;
+}
+.experience .container .content {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+}
+.experience .container.left .content::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f1f1f1;
+}
+.experience .container.right .content::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #f1f1f1 transparent transparent;
+}
+@media screen and (max-width: 768px) {
+    .experience .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .experience .container.right {
+        left: 0%;
+    }
+    .experience .timeline::after {
+        left: 30px;
+    }
+}
+
 /* view all button */
 .morebtn {
   display: flex;
