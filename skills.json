@@ -1,16 +1,14 @@
 [
   { "name": "HTML5", "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png" },
   { "name": "CSS3", "icon": "https://img.icons8.com/color/48/000000/css3.png" },
-  { "name": "JavaScript", "icon": "https://img.icons8.com/color/48/000000/javascript.png" },
-  { "name": "ReactJS", "icon": "https://img.icons8.com/color/48/000000/react-native.png" },
   { "name": "Python", "icon": "https://img.icons8.com/color/48/000000/python--v1.png" },
   { "name": "Java", "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" },
   { "name": "MySQL", "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png" },
   { "name": "MongoDB", "icon": "https://img.icons8.com/color/48/000000/mongodb.png" },
-  { "name": "Power BI", "icon": "https://img.icons8.com/color/48/000000/microsoft-power-bi.png" },
+  { "name": "Power BI", "icon": "https://img.icons8.com/color/48/power-bi.png" },
   { "name": "Tableau", "icon": "https://img.icons8.com/color/48/000000/tableau-software.png" },
   { "name": "Excel", "icon": "https://img.icons8.com/color/48/000000/microsoft-excel-2019--v1.png" },
-  { "name": "AWS", "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png" },
+   { "name": "Azure", "icon": "https://img.icons8.com/color/48/000000/azure-1.png" },
   { "name": "Netlify", "icon": "https://img.icons8.com/color/48/000000/netlify.png" },
   { "name": "GitHub", "icon": "https://img.icons8.com/ios-glyphs/48/000000/github.png" }
 ]
