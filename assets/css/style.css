@@ -21,6 +21,26 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Move Tawk chat bubble + chat window to LEFT */
+
+iframe {
+  left: 20px !important;
+  right: auto !important;
+}
+
+/* Fix chat popup window */
+iframe[style*="bottom"] {
+  left: 20px !important;
+  right: auto !important;
+}
+
+/* Ensure container also shifts */
+div[class*="tawk"] {
+  left: 20px !important;
+  right: auto !important;
+}
+
+
 *::selection {
   background: #2b3dda;
   color: #fff;

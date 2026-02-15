@@ -202,16 +202,33 @@ document.onkeydown = function (e) {
 }
 
 // Start of Tawk.to Live Chat
+// Start of Tawk.to Live Chat
 
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+
+Tawk_API.onLoad = function () {
+    // Force widget to left
+    setTimeout(() => {
+        const frames = document.querySelectorAll("iframe");
+        frames.forEach(frame => {
+            frame.style.left = "20px";
+            frame.style.right = "auto";
+            frame.style.bottom = "20px";
+        });
+    }, 2000);
+};
+
 (function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+var s1=document.createElement("script"),
+s0=document.getElementsByTagName("script")[0];
 s1.async=true;
 s1.src='https://embed.tawk.to/69917e236e20711c31415fe2/1jhg59f4n';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+// End of Tawk.to Live Chat
 
 // End of Tawk.to Live Chat
 
